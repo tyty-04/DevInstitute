@@ -1,0 +1,7 @@
+.container{
+    font-display: flex;
+    flex-direction: row;
+}
+.card-body{
+    background-color: red;
+}
