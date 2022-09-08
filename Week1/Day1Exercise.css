@@ -1,0 +1,26 @@
+span{
+    background-color: yellow;
+}
+.indent{
+    margin-left: 50px;
+}
+h3{
+    text-decoration: underline;
+}
+.centered{
+    text-align: center;
+}
+h4{
+    color: red;
+    border: solid 2px red;
+}
+img{
+    margin-top: 50px;
+    border: orange solid 6px;
+}
+th, td{
+    border: solid 1px black;
+}
+ol{
+    list-style: upper-roman;
+}
