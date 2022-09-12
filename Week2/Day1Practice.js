@@ -12,28 +12,28 @@ let futureAge = futureYear - birthYear;
 
 console.log(`I will be ${futureAge} in ${futureYear}`);
 
-let pets = ['cat','dog','fish','rabbit','cow'];
+let pets = ["cat", "dog", "fish", "rabbit", "cow"];
 console.log(pets[1]);
 pets.splice(3, 1, "horse");
 console.log(pets.length);
 
 let object1 = {
-    username: "Hello",
-    password: "World"
-}
+  username: "Hello",
+  password: "World",
+};
 let object2 = {
-    username: "Hello",
-    timeline: "World"
-}
+  username: "Hello",
+  timeline: "World",
+};
 let object3 = {
-    username: "Hello",
-    timeline: "World"
-}
+  username: "Hello",
+  timeline: "World",
+};
 let object4 = {
-    username: "Hello",
-    timeline: "World"
-}
+  username: "Hello",
+  timeline: "World",
+};
 
-let database = [object1]
+let database = [object1];
 
-let newsfeed = [object2, object3, object4]
+let newsfeed = [object2, object3, object4];
