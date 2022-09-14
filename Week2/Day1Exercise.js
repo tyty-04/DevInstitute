@@ -18,6 +18,10 @@ console.log(myWatchedSeries[1].charAt(2));
 console.log(myWatchedSeries);
 
 //Exercise 3
-let tempC = 25;
-let tempF = (tempC / 5) * 9 + 32;
-console.log(`${tempC}°C is ${tempF}°F`);
+setInterval(tempMethod, 5);
+
+function tempMethod() {
+  let tempC = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+  let tempF = (tempC / 5) * 9 + 32;
+  console.log(`${tempC}°C is ${tempF}°F`);
+}
