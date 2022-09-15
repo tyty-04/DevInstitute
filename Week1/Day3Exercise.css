@@ -1,43 +1,43 @@
 .container {
   height: 1200px;
-  width: 100vw;
-  background-color: grey;
+  width: 97.5vw;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 19.5vw 77vw;
   grid-template-rows: 1fr;
-  gap: 10px;
-}
-.box {
-  border: solid black 2px;
+  gap: 1vw;
 }
 .box1 {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0px;
+  background-color: lightgray;
 }
-.boxC{
-    text-align: center;
-}
-.boxC1 {
+.boxC {
+  text-align: center;
 }
 .box2 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 300px);
 }
-.boxA {
-  border: solid black 2px;
-}
 .boxA3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 15% 85%;
 }
-.boxB {
-  border: solid black 2px;
-}
 .boxB1 {
   grid-column: span 2;
 }
-.gap{
-    margin: 50px;
+.gap {
+  margin: 60px;
+}
+.boxB2,
+.boxB3 {
+  margin-top: 10px;
+}
+hr {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: darkgray;
+  border: solid 1px darkgray;
 }
