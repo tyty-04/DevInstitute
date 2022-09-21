@@ -23,10 +23,16 @@ function compareNumbers(userNumber, computerNumber) {
       userNumber = Number(
         prompt("Your number is bigger than the computer's, guess again")
       );
+      while (!(userNumber >= 0 && userNumber <= 10)) {
+        userNumber = Number(prompt("Not a valid number, try again"));
+      }
     } else {
       userNumber = Number(
         prompt("Your number is smaller than the computer's, guess again")
       );
+      while (!(userNumber >= 0 && userNumber <= 10)) {
+        userNumber = Number(prompt("Not a valid number, try again"));
+      }
     }
   }
   alert("Out of attempts");
