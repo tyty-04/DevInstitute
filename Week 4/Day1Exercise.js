@@ -1,16 +1,16 @@
 // Exercise 1
-let div = document.getElementById("container");
-console.log(div);
-let pete = document.body.children[1].children[1];
-pete.textContent = "Richard";
-let firstName = document.querySelectorAll(".list li");
-firstName[0].textContent = "Tyler";
-firstName[2].textContent = "Tyler";
-document.body.children[2].removeChild(document.body.children[2].children[1]);
-let studentList = document.querySelectorAll(".list");
-studentList[0].classList.add("student_list", "attendance", "university");
-studentList[1].classList.add("student_list");
-console.log(document);
+// let div = document.getElementById("container");
+// console.log(div);
+// let pete = document.body.children[1].children[1];
+// pete.textContent = "Richard";
+// let firstName = document.querySelectorAll(".list li");
+// firstName[0].textContent = "Tyler";
+// firstName[2].textContent = "Tyler";
+// document.body.children[2].removeChild(document.body.children[2].children[1]);
+// let studentList = document.querySelectorAll(".list");
+// studentList[0].classList.add("student_list", "attendance", "university");
+// studentList[1].classList.add("student_list");
+// console.log(document);
 
 // Exercise 2
 let divElement = document.querySelector("div");
