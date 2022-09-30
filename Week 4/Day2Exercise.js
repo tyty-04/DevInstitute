@@ -41,31 +41,61 @@
 // }
 
 //Exercise 2
-let form = document.forms[0];
-console.log(form);
-let fNameID = document.getElementById("fname");
-let lNameID = document.getElementById("lname");
-console.log(fNameID);
-console.log(lNameID);
-let fName = form.elements.fname;
-let lName = form.elements.lname;
-console.log(fName);
-console.log(lName);
-form.addEventListener("submit", () => {
-  event.preventDefault();
-  let fNameValue = fName.value;
-  let lNameValue = lName.value;
-  if (fNameValue != "" && lNameValue != "") {
-    let fNameLI = document.createElement("li");
-    let lNameLI = document.createElement("li");
-    let fNameLIText = document.createTextNode(fNameValue);
-    console.log(fNameLIText);
-    fNameLI.appendChild(fNameLIText);
-    let lNameLIText = document.createTextNode(lNameValue);
-    console.log(lNameLIText);
-    lNameLI.appendChild(lNameLIText);
-    let ul = document.querySelector("ul");
-    ul.appendChild(fNameLI);
-    ul.appendChild(lNameLI);
-  }
-});
+// let form = document.forms[0];
+// console.log(form);
+// let fNameID = document.getElementById("fname");
+// let lNameID = document.getElementById("lname");
+// console.log(fNameID);
+// console.log(lNameID);
+// let fName = form.elements.fname;
+// let lName = form.elements.lname;
+// console.log(fName);
+// console.log(lName);
+// form.addEventListener("submit", () => {
+//   event.preventDefault();
+//   let fNameValue = fName.value;
+//   let lNameValue = lName.value;
+//   if (fNameValue != "" && lNameValue != "") {
+//     let fNameLI = document.createElement("li");
+//     let lNameLI = document.createElement("li");
+//     let fNameLIText = document.createTextNode(fNameValue);
+//     console.log(fNameLIText);
+//     fNameLI.appendChild(fNameLIText);
+//     let lNameLIText = document.createTextNode(lNameValue);
+//     console.log(lNameLIText);
+//     lNameLI.appendChild(lNameLIText);
+//     let ul = document.querySelector("ul");
+//     ul.appendChild(fNameLI);
+//     ul.appendChild(lNameLI);
+//   }
+// });
+
+//Exercise 3
+// let allBoldItems = [];
+// function getBoldItems(){
+//   allBoldItems = document.querySelectorAll("strong");
+// }
+// function highlight(){
+//   getBoldItems();
+//   for (let i = 0; i < allBoldItems.length; i++){
+//     allBoldItems[i].style.color = "blue";
+//   }
+// }
+// function returnNormal(){
+//   getBoldItems();
+//   for (let i = 0; i < allBoldItems.length; i++){
+//     allBoldItems[i].style.color = "black"
+//   }
+// }
+// let paragraph = document.querySelector("p");
+// paragraph.addEventListener("mouseover", highlight);
+// paragraph.addEventListener("mouseout", returnNormal);
+
+//Exercise 4
+// let form = document.forms[0];
+// form.addEventListener("submit", () => {
+//   event.preventDefault();
+//   let radius = form.elements.radius.value;
+//   let volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+//   form.elements.volume.value = volume;
+// });
