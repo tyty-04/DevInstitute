@@ -1,5 +1,11 @@
 let div = document.getElementById("container");
 let box = document.getElementById("box");
+let h3 = document.querySelector("h3");
+let li = document.querySelectorAll("li");
+h3.style.fontFamily = 'Noto Sans Mono';
+for (let i = 0; i < li.length; i++){
+  li[i].style.fontFamily = "Noto Sans Mono";
+}
 div.style.backgroundColor = "blue";
 box.style.backgroundColor = "red";
 box.style.width = "50px";
@@ -19,42 +25,7 @@ let downInterval = [];
 let leftInterval = [];
 let rightInterval = [];
 
-let buttons = document.querySelectorAll("button");
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].style.width = "50px";
-}
 
-let up = document.getElementById("up");
-let down = document.getElementById("down");
-let left = document.getElementById("left");
-let right = document.getElementById("right");
-let random = document.getElementById("random");
-let stopB = document.getElementById("stop");
-up.style.position = "absolute";
-down.style.position = "absolute";
-left.style.position = "absolute";
-right.style.position = "absolute";
-random.style.position = "absolute";
-stopB.style.position = "absolute";
-up.style.top = "500px";
-up.style.left = "0px";
-down.style.top = "500px";
-down.style.left = "50px";
-left.style.top = "500px";
-left.style.left = "100px";
-right.style.top = "500px";
-right.style.left = "150px";
-random.style.top = "500px";
-random.style.left = "200px";
-stopB.style.top = "500px";
-stopB.style.left = "250px";
-
-up.addEventListener("click", moveUp);
-down.addEventListener("click", moveDown);
-left.addEventListener("click", moveLeft);
-right.addEventListener("click", moveRight);
-random.addEventListener("click", randomMove);
-stopB.addEventListener("click", stopMove);
 document.addEventListener("keypress", function (event) {
   let key = event.key;
   switch (key) {
