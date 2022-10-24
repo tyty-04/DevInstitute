@@ -62,3 +62,27 @@
 // checkYear();
 
 //Exercise 4
+function makeJuice(size) {
+  let ingredients = [];
+  function addIngredients(a, b, c) {
+    ingredients.push(a);
+    ingredients.push(b);
+    ingredients.push(c);
+  }
+  function displayJuice() {
+    document.write(`The client wants a ${size} juice, containing `);
+    let index = 0;
+    ingredients.forEach((element) => {
+      if (index != ingredients.length - 1) {
+        document.write(element + ", ");
+      } else {
+        document.write("and " + element + ".");
+      }
+      index++;
+    });
+  }
+  addIngredients("orange", "strawberry", "banana");
+  addIngredients("blueberry", "mango", "passion fruit");
+  displayJuice();
+}
+makeJuice("medium");

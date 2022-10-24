@@ -1,0 +1,33 @@
+#myInput {
+  width: 90%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 12px 10px 12px 10px;
+  grid-column: span 3;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-items: center;
+}
+
+#container > div {
+  height: 500px;
+  width: 400px;
+  text-align: center;
+  background-image: url(./roboBackground2.png);
+  background-color: #4FC1C5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(./roboBackground.png);
+  background-color: #6556CD;
+}
