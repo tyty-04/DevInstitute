@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  row-gap: 10px;
+  background-color: rgb(14, 14, 14);
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+#display {
+  background-color: darkgray;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  font-size: 50px;
+  overflow: auto;
+}
+#numPad {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  font-size: 30px;
+  grid-template-rows: repeat(5, 75px);
+  border-radius: 20px;
+}
+.button {
+  background-color: gray;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+#equals {
+  grid-column: span 2;
+  border-radius: 20px;
+}
+#clear {
+  grid-column: span 2;
+  border-radius: 20px;
+}
